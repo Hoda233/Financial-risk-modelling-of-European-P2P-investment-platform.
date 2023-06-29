@@ -1,0 +1,117 @@
+desc,type,null,unique, excel
+
+--> should we convert dates?
+--> what is -1? i think replace it?
+
+ 0    ActiveLateCategory                      ? may be ordinal
+ 1    ActiveLateLastPaymentCategory           ? may be ordinal
+ 2    ActiveScheduleFirstPaymentReached       -
+ 3    Age                                     -
+ 4    Amount                                  0? to int?
+ 5    AmountOfPreviousLoansBeforeLoan         0?to int?
+ 6    ApplicationSignedHour                   will affect?
+ 7    ApplicationSignedWeekday                will affect?
+ 8    AppliedAmount                           to int?
+ 9    BiddingStartedOn                        130,000 , data+time
+ 10   BidsApi                                 -  
+ 11   BidsManual                              to int?
+ 12   BidsPortfolioManager                    - should be summed the previous 3?
+ 13   City                                    will affect?
+ 14   ContractEndDate                         date
+ 15   Country                                 will affect?
+ 16   County                                  will affect?
+ 17   CreditScoreEeMini                       cat ordinal but with floats
+ 18   CreditScoreEsEquifaxRisk                ordinal 
+ 19   CreditScoreEsMicroL                     ordinal 
+ 20   CreditScoreFiAsiakasTietoRiskGrade      ordinal
+ 21   CurrentDebtDaysPrimary                  to int ?
+ 22   CurrentDebtDaysSecondary                to int ?
+ 23   DateOfBirth                             date, I think no effect(we have age)
+ 24   DebtOccuredOn                           date 
+ 25   DebtOccuredOnForSecondary               date
+ 26   DebtToIncome                            -
+ 27   DefaultDate                             date
+ 28   EAD1                                    float64
+ 29   EAD2                                    float64
+ 30   EL_V0                                   -
+ 31   EL_V1                                   -
+ 32   Education                               ordinal, to int? , -1
+ 33   EmploymentDurationCurrentEmployer       cat, ordinal
+ 34   EmploymentPosition                      may be removed?
+ 35   EmploymentStatus                        ordinal, to int? , -1
+ 36   ExistingLiabilities                     int but i think cat ordinal
+ 37   ExpectedLoss                            -
+ 38   ExpectedReturn                          -
+ 39   FirstPaymentDate                        date
+ 40   FreeCash                                -
+ 41   Gender                                  cat but float nominal 0,1,2? replace 2 as null
+ 42   GracePeriodEnd                          date, removed
+ 43   GracePeriodStart                        date, removed
+ 44   HomeOwnershipType                       nominal??, -1 
+ 45   IncomeFromChildSupport                  -
+ 46   IncomeFromFamilyAllowance               -
+ 47   IncomeFromLeavePay                      -
+ 48   IncomeFromPension                       -
+ 49   IncomeFromPrincipalEmployer             -
+ 50   IncomeFromSocialWelfare                 -
+ 51   IncomeOther                             -
+ 52   IncomeTotal                             -, should i use only this???
+ 53   Interest                                -
+ 54   InterestAndPenaltyBalance               -
+ 55   InterestAndPenaltyDebtServicingCost     -
+ 56   InterestAndPenaltyPaymentsMade          -
+ 57   InterestAndPenaltyWriteOffs             -
+ 58   InterestRecovery                        -
+ 59   LanguageCode                            int, cat, nominal
+ 60   LastPaymentOn                           object 
+ 61   LiabilitiesTotal                        float64
+ 62   ListedOnUTC                             object 
+ 63   LoanApplicationStartedDate              object 
+ 64   LoanDate                                object 
+ 65   LoanDuration                            int64  
+ 66   LoanId                                  object 
+ 67   LoanNumber                              int64  
+ 68   LossGivenDefault                        float64
+ 69   MaritalStatus                           float64
+ 70   MaturityDate_Last                       object 
+ 71   MaturityDate_Original                   object 
+ 72   ModelVersion                            float64
+ 73   MonthlyPayment                          float64
+ 74   MonthlyPaymentDay                       int64  
+ 75   NewCreditCustomer                       bool   
+ 76   NextPaymentDate                         object 
+ 77   NextPaymentNr                           float64
+ 78   NoOfPreviousLoansBeforeLoan             int64  
+ 79   NrOfDependants                          object 
+ 80   NrOfScheduledPayments                   float64
+ 81   OccupationArea                          float64
+ 82   PlannedInterestPostDefault              float64
+ 83   PlannedInterestTillDate                 float64
+ 84   PlannedPrincipalPostDefault             float64
+ 85   PlannedPrincipalTillDate                float64
+ 86   PreviousEarlyRepaymentsBefoleLoan       float64
+ 87   PreviousEarlyRepaymentsCountBeforeLoan  int64  
+ 88   PreviousRepaymentsBeforeLoan            float64
+ 89   PrincipalBalance                        float64
+ 90   PrincipalDebtServicingCost              float64
+ 91   PrincipalOverdueBySchedule              float64
+ 92   PrincipalPaymentsMade                   float64
+ 93   PrincipalRecovery                       float64
+ 94   PrincipalWriteOffs                      float64
+ 95   ProbabilityOfDefault                    float64
+ 96   Rating                                  object 
+ 97   Rating_V0                               object 
+ 98   Rating_V1                               object 
+ 99   Rating_V2                               object 
+ 100  ReScheduledOn                           object 
+ 101  RecoveryStage                           float64
+ 102  RefinanceLiabilities                    int64  
+ 103  ReportAsOfEOD                           object 
+ 104  Restructured                            bool   
+ 105  StageActiveSince                        object 
+ 106  Status                                  object 
+ 107  UseOfLoan                               int64  
+ 108  UserName                                object 
+ 109  VerificationType                        float64
+ 110  WorkExperience                          object 
+ 111  WorseLateCategory                       object 
