@@ -8,18 +8,9 @@
 
 
 nominal with numerical values
- 107  UseOfLoan                               -1?
- 32   Education                               ordinal , -1
- 35   EmploymentStatus                        ordinal , -1
- 44   HomeOwnershipType                       nominal??, -1 
- 69   MaritalStatus                           -1, nominal
- 81   OccupationArea                          -1
 
- 17   CreditScoreEeMini                       cat ordinal but with floats, nulls
- 41   Gender                                  cat but float nominal 0,1,2? replace 2 as null, nulls
- 72   ModelVersion                            cat, float , nulls
- 101  RecoveryStage                           float64 , nominal, nulls 
- 109  VerificationType                        float64, nominal, nulls
+ 41   Gender                                  cat but float nominal 0,1,2? replace 2 as null
+
 
  106  Status                                  target ------------------>
 

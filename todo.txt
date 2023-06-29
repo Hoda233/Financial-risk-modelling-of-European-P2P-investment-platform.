@@ -1,17 +1,161 @@
-missing -> num, cat,bool
-outliers
-cat nominal,ordinal
-dates
-encoding
-status
+missing -> num, cat, bool ->done
+
+outliers ->done
+
+encoding       ->done
 
 (drop)
-1,             done
-unique,        done
+1,             ->done
+unique,        ->done
+
+(-1) done
+
 noneed
 
-(-1)
-numerical but categorical ? -1&null 
-to str 
-replace -1 with null then null with mode 
-to int 
+dates
+
+status
+
+duplicates 
+
+normalize/scale
+
+
+-----------------------------------------------
+3 bool
+56 float & 14 int -> continous, dicrete 
+39 object -> categories and dates
+
+ 66   LoanId                                  object  ---
+ 67   LoanNumber                              int64   ---
+ 103  ReportAsOfEOD                           object  ---
+
+ no nulls, to int
+ ---------
+ 2    ActiveScheduleFirstPaymentReached       bool    bool
+ 75   NewCreditCustomer                       bool    bool
+ 104  Restructured                            bool    bool
+
+ no preprocessing, no nulls, already encoded
+ --------------------------
+ 3    Age                                     int64   disc
+ 6    ApplicationSignedHour                   int64   disc
+ 7    ApplicationSignedWeekday                int64   disc
+ 36   ExistingLiabilities                     int64   disc
+ 59   LanguageCode                            int64   disc
+ 65   LoanDuration                            int64   disc
+ 74   MonthlyPaymentDay                       int64   disc
+ 78   NoOfPreviousLoansBeforeLoan             int64   disc
+ 87   PreviousEarlyRepaymentsCountBeforeLoan  int64   disc
+ 102  RefinanceLiabilities                    int64   disc
+
+ nulls and -1 , already encoded ---------> replace all -1 in data with nulls, replace 0 in zeros with nulls, handle missing with mode, to int
+--------------
+ 17   CreditScoreEeMini                       float64 disc ,0
+ 32   Education                               float64 disc ,0
+ 35   EmploymentStatus                        float64 disc ,0
+ 41   Gender                                  float64 disc
+ 44   HomeOwnershipType                       float64 disc
+ 69   MaritalStatus                           float64 disc ,0
+ 72   ModelVersion                            float64 disc
+ 81   OccupationArea                          float64 disc ,0
+ 101  RecoveryStage                           float64 disc
+ 107  UseOfLoan                               int64   disc
+ 109  VerificationType                        float64 disc
+
+
+ 0    ActiveLateCategory                      object  cat
+ 1    ActiveLateLastPaymentCategory           object  cat
+ 13   City                                    object  cat -> too many values -> removed
+ 15   Country                                 object  cat
+ 16   County                                  object  cat -> too many values -> removed
+ 18   CreditScoreEsEquifaxRisk                object  cat
+ 19   CreditScoreEsMicroL                     object  cat
+ 20   CreditScoreFiAsiakasTietoRiskGrade      object  cat
+ 33   EmploymentDurationCurrentEmployer       object  cat
+ 34   EmploymentPosition                      object  cat -> too many values
+ 79   NrOfDependants                          object  cat
+ 96   Rating                                  object  cat
+ 97   Rating_V0                               object  cat
+ 98   Rating_V1                               object  cat
+ 99   Rating_V2                               object  cat
+ 106  Status                                  object  cat 
+ 108  UserName                                object  cat -> too many values -> removed
+ 110  WorkExperience                          object  cat
+ 111  WorseLateCategory                       object  cat
+
+ 9    BiddingStartedOn                        object  date
+*14   ContractEndDate                         object  date
+*23   DateOfBirth                             object  date -> we have age -> removed 
+*24   DebtOccuredOn                           object  date
+*25   DebtOccuredOnForSecondary               object  date
+*27   DefaultDate                             object  date
+ 39   FirstPaymentDate                        object  date
+*42   GracePeriodEnd                          object  date
+*43   GracePeriodStart                        object  date
+ 60   LastPaymentOn                           object  date
+ 62   ListedOnUTC                             object  date
+ 63   LoanApplicationStartedDate              object  date
+ 64   LoanDate                                object  date
+ 70   MaturityDate_Last                       object  date
+ 71   MaturityDate_Original                   object  date
+*76   NextPaymentDate                         object  date
+*100  ReScheduledOn                           object  date
+ 105  StageActiveSince                        object  date
+
+
+ 
+ 
+
+handle nulls with mean -----------------> before that handle outliers
+--------------------------------
+ 4    Amount                                  float64 cont 
+ 5    AmountOfPreviousLoansBeforeLoan         float64 cont
+ 8    AppliedAmount                           float64 cont
+ 10   BidsApi                                 int64   cont
+ 11   BidsManual                              float64 cont
+ 12   BidsPortfolioManager                    int64   cont
+ 21   CurrentDebtDaysPrimary                  float64 cont
+ 22   CurrentDebtDaysSecondary                float64 cont
+ 26   DebtToIncome                            float64 cont
+ 28   EAD1                                    float64 cont
+ 29   EAD2                                    float64 cont
+ 30   EL_V0                                   float64 cont
+ 31   EL_V1                                   float64 cont
+ 37   ExpectedLoss                            float64 cont
+ 38   ExpectedReturn                          float64 cont
+ 40   FreeCash                                float64 cont
+ 45   IncomeFromChildSupport                  float64 cont
+ 46   IncomeFromFamilyAllowance               float64 cont
+ 47   IncomeFromLeavePay                      float64 cont
+ 48   IncomeFromPension                       float64 cont
+ 49   IncomeFromPrincipalEmployer             float64 cont
+ 50   IncomeFromSocialWelfare                 float64 cont
+ 51   IncomeOther                             float64 cont
+ 52   IncomeTotal                             float64 cont
+ 53   Interest                                float64 cont
+ 54   InterestAndPenaltyBalance               float64 cont
+ 55   InterestAndPenaltyDebtServicingCost     float64 cont
+ 56   InterestAndPenaltyPaymentsMade          float64 cont
+ 57   InterestAndPenaltyWriteOffs             float64 cont
+ 58   InterestRecovery                        float64 cont
+ 61   LiabilitiesTotal                        float64 cont
+ 68   LossGivenDefault                        float64 cont
+ 73   MonthlyPayment                          float64 cont
+ 77   NextPaymentNr                           float64 cont
+ 80   NrOfScheduledPayments                   float64 cont
+ 82   PlannedInterestPostDefault              float64 cont
+ 83   PlannedInterestTillDate                 float64 cont
+ 84   PlannedPrincipalPostDefault             float64 cont
+ 85   PlannedPrincipalTillDate                float64 cont
+ 86   PreviousEarlyRepaymentsBefoleLoan       float64 cont
+ 88   PreviousRepaymentsBeforeLoan            float64 cont
+ 89   PrincipalBalance                        float64 cont
+ 90   PrincipalDebtServicingCost              float64 cont
+ 91   PrincipalOverdueBySchedule              float64 cont
+ 92   PrincipalPaymentsMade                   float64 cont
+ 93   PrincipalRecovery                       float64 cont
+ 94   PrincipalWriteOffs                      float64 cont
+ 95   ProbabilityOfDefault                    float64 cont
+ 
+
