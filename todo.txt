@@ -1,7 +1,6 @@
 missing -> num, cat,bool
 outliers
-cat
-nominal,ordinal
+cat nominal,ordinal
 dates
 encoding
 status

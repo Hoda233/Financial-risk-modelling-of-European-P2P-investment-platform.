@@ -1,10 +1,11 @@
  6    ApplicationSignedHour                   will affect?
  7    ApplicationSignedWeekday                will affect?
  13   City                                    will affect?
- 15   Country                                 will affect?
  16   County                                  will affect?
  74   MonthlyPaymentDay                       will affect???
  108  UserName                                will affect?
+ 34   EmploymentPosition                      may be removed?
+
 
 nominal with numerical values
  107  UseOfLoan                               -1?
@@ -15,23 +16,10 @@ nominal with numerical values
  81   OccupationArea                          -1
 
  17   CreditScoreEeMini                       cat ordinal but with floats, nulls
- 19   CreditScoreEsMicroL                     object, ordinal, nulls 
  41   Gender                                  cat but float nominal 0,1,2? replace 2 as null, nulls
  72   ModelVersion                            cat, float , nulls
- 79   NrOfDependants                          cat ,object, nulls, but i think to int, to int because '10plus'
- 96   Rating                                  object , ordinal,nulls
  101  RecoveryStage                           float64 , nominal, nulls 
  109  VerificationType                        float64, nominal, nulls
- 33   EmploymentDurationCurrentEmployer       cat, object, ordinal, nulls
-
-
- what?
- 34   EmploymentPosition                      may be removed?
- 
-no problem?
- 59   LanguageCode                            int, cat, nominal, no nulls
- 36   ExistingLiabilities                     int but i think cat ordinal, no nulls
-
 
  106  Status                                  target ------------------>
 
