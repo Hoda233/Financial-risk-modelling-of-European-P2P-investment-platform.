@@ -2,7 +2,7 @@ missing -> num, cat, bool ->done
 
 outliers ->done
 
-encoding       ->done
+encoding       
 
 (drop)
 1,             ->done
@@ -10,11 +10,11 @@ unique,        ->done
 
 (-1) done
 
-noneed
+noneed ->done
 
-dates
+dates ->done
 
-status
+status ->done
 
 duplicates 
 
@@ -84,6 +84,8 @@ normalize/scale
  110  WorkExperience                          object  cat
  111  WorseLateCategory                       object  cat
 
+delete dates???
+---------------
  9    BiddingStartedOn                        object  date
 *14   ContractEndDate                         object  date
 *23   DateOfBirth                             object  date -> we have age -> removed 
@@ -157,5 +159,3 @@ handle nulls with mean -----------------> before that handle outliers
  93   PrincipalRecovery                       float64 cont
  94   PrincipalWriteOffs                      float64 cont
  95   ProbabilityOfDefault                    float64 cont
- 
-

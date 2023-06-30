@@ -1,0 +1,53 @@
+ 5   BidsApi                                 134529 non-null  int64  
+ 6   BidsManual                              134529 non-null  float64
+ 7   BidsPortfolioManager                    134529 non-null  int64 
+ 30  NewCreditCustomer                       134529 non-null  bool   
+ 47  VerificationType                        134484 non-null  float64 
+ 24  LanguageCode                            134529 non-null  int64  
+ 1   Age                                     134529 non-null  int64  
+ 18  Gender                                  134484 non-null  float64
+ 8   Country                                 134529 non-null  object 
+ 4   AppliedAmount                           134529 non-null  float64
+ 2   Amount                                  134529 non-null  float64
+ 21  Interest                                134529 non-null  float64
+ 26  LoanDuration                            134529 non-null  int64  
+ 29  MonthlyPayment                          127844 non-null  float64
+ 46  UseOfLoan                               134529 non-null  int64  
+ 11  Education                               134484 non-null  float64
+ 28  MaritalStatus                           134484 non-null  float64
+ 12  EmploymentDurationCurrentEmployer       133653 non-null  object 
+ 13  EmploymentStatus                        134332 non-null  float64
+ 34  OccupationArea                          134443 non-null  float64
+ 19  HomeOwnershipType                       132877 non-null  float64
+ 20  IncomeTotal                             134529 non-null  float64
+ 14  ExistingLiabilities                     134529 non-null  int64  
+ 43  RefinanceLiabilities                    134529 non-null  int64  
+ 10  DebtToIncome                            134484 non-null  float64
+ 17  FreeCash                                134484 non-null  float64
+ 42  Rating                                  131799 non-null  object 
+ 44  Restructured                            134529 non-null  bool   
+ 9   CreditScoreEsMicroL                     104955 non-null  object 
+ 40  PrincipalPaymentsMade                   134529 non-null  float64
+ 23  InterestAndPenaltyPaymentsMade          134529 non-null  float64
+ 32  NoOfPreviousLoansBeforeLoan             134529 non-null  int64  
+ 3   AmountOfPreviousLoansBeforeLoan         134529 non-null  float64
+ 36  PreviousEarlyRepaymentsCountBeforeLoan  134529 non-null  int64  
+ 37  PreviousRepaymentsBeforeLoan            91368 non-null   float64
+ 45  Status                                  134529 non-null  object 
+
+
+ 31  NextPaymentNr                           97788 non-null   float64
+ 33  NrOfScheduledPayments                   97788 non-null   float64
+ 0   ActiveScheduleFirstPaymentReached       134529 non-null  bool   
+ 35  PlannedInterestTillDate                 130587 non-null  float64
+ 15  ExpectedLoss                            131893 non-null  float64
+ 27  LossGivenDefault                        131893 non-null  float64
+ 16  ExpectedReturn                          131893 non-null  float64
+ 41  ProbabilityOfDefault                    131893 non-null  float64
+ 39  PrincipalOverdueBySchedule              119692 non-null  float64
+ 48  WorseLateCategory                       89073 non-null   object 
+
+ 22  InterestAndPenaltyBalance               134529 non-null  float64
+ 25  LiabilitiesTotal                        134529 non-null  float64
+ 38  PrincipalBalance                        134529 non-null  float64
+
