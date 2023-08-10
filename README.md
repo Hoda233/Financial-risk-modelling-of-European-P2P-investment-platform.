@@ -4,7 +4,15 @@
 About The main purposes of this analysis are to summarize the characteristics of variables that can affect the loan status and to get some ideas about the relationships among variables.
 
 ## Problem type
-Supervised machine learning problem (Binary classification).
+Supervised machine learning problem.
+
+- Binary classification: 
+  - Loan Status.
+  
+- Regression: 
+  - EMI (Equated Monthly Installments)
+  - ELA (Eligible Loan Amount)
+  - PROI (Preferred Return on Investment)
 
 ## Libraries and packages
 `conda install numpy` 
