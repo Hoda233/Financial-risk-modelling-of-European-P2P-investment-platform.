@@ -12,7 +12,7 @@ Supervised machine learning problem.
 - Regression: 
   - EMI (Equated Monthly Installments)
   - ELA (Eligible Loan Amount)
-  - PROI (Preferred Return on Investment)
+  - ROI (Return on Investment)
 
 ## Libraries and packages
 `conda install numpy` 
@@ -31,23 +31,10 @@ Supervised machine learning problem.
 - Loading Packages and Data
 - Data Exploration
 - Data Preprocessing
-  - Drop unnedded features
-  - Encode target feature
-  - Handle missing Values
-  - Handle outliers
-  - Handle duplicates
 - EDA (Exploratory Data Analysis)
-  - Univariate Analysis
-  - Bivariate Analysis
 - Feature Engineering
-  - Encoding Categorical Variables
-  - Scaling
-  - Feature Selection
-  - PCA (Principal Component Analysis)
+- Feature Selection
+- PCA (Principal Component Analysis)
 - Modeling
-  - RandomForest
-  - XGBoost
-  - Logistic Regression
-  - Gaussian naive bayes
   
 
