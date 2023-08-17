@@ -3,7 +3,7 @@
 ## About
 About The main purposes of this analysis are to summarize the characteristics of variables that can affect the loan status and to get some ideas about the relationships among variables.
 
-## Problem type
+## Problem
 Supervised machine learning problem.
 
 - Binary classification: 
@@ -86,9 +86,15 @@ Each pipelines includes Scaling, PCA, Model.
 - Run **Final_Pipeline.ipynb** notebook to get the models
 - To run the app: run `python -m streamlit run app.py` in vscode terminal 
 
-## Application 
+## Application Screenshots
+
+### Numerical inputs
 <img src="screenshots/image.png" alt="drawing"/>
+
+### Categorical inputs
 <img src="screenshots/image-1.png" alt="drawing"/>
+
+### Outputs
 <img src="screenshots/image-2.png" alt="drawing"/>
 <!-- ![Alt text](image.png)
 ![Alt text](image-1.png)
