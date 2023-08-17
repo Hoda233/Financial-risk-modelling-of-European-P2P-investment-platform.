@@ -58,6 +58,14 @@ Supervised machine learning problem.
 ## Final Pipelines
 Each pipelines includes Scaling, PCA, Model.
 
+```
+linear_regression_pipeline = Pipeline([
+    ('scaler', StandardScaler()),
+    ('pca', PCA(n_components =  20)),
+    ('classifier', LinearRegression())
+])
+```
+
 - **Models used in Regression pipelines:**
 
 | Model | R2 Scores for each target | R2 Score |
