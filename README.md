@@ -15,7 +15,9 @@ Supervised machine learning problem.
   - ROI (Return on Investment)
 
 ## Libraries and packages
-`conda install numpy` `conda install pandas` `pip install seaborn` `conda install matplotlib` `conda install scikit-learn` `conda install -c conda-forge xgboost` ` pip install streamlit`
+`conda install numpy` `conda install pandas` `pip install seaborn` 
+`conda install matplotlib` `conda install scikit-learn` 
+`conda install -c conda-forge xgboost` ` pip install streamlit`
 
 ## Structure 
 - Loading Packages and Data
