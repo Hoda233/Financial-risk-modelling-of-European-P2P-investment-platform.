@@ -96,6 +96,9 @@ linear_regression_pipeline = Pipeline([
 
 ### Outputs
 <img src="screenshots/image-2.png" alt="drawing"/>
+
 <!-- ![Alt text](image.png)
 ![Alt text](image-1.png)
-![Alt text](image-2.png) -->
+![Alt text](image-2.png) 
+
+-->
