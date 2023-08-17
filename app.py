@@ -101,8 +101,10 @@ def main():
         reg_pred = reg_model.predict(input_data_reg)
         classif_pred = calssif_model.predict(input_data_clf)
 
-        st.write("ELA_Mean EMI ROI: ", reg_pred[0])
-        st.write("Loan Status: ", classif_pred[0])
+        st.write("EMI: ", reg_pred[0][0])
+        st.write("ELA with EMI mean: ", reg_pred[0][1])
+        st.write("ROI: ", reg_pred[0][2])
+        st.write("Loan Status(default/non-default): ", classif_pred[0])
 
         
 if __name__ == "__main__":

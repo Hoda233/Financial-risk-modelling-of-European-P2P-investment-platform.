@@ -13,7 +13,6 @@ Supervised machine learning problem.
   - EMI (Equated Monthly Installments)
   - ELA (Eligible Loan Amount)
   - ROI (Return on Investment)
-  - ROI (Return on Investment)
 
 ## Libraries and packages
 `conda install numpy` 
@@ -83,8 +82,7 @@ Each pipelines includes Scaling, PCA, Model.
 - Create a **streamlit app** to access model and get predictions
 
 ## How to run
-- Clone the repo or download project folder
-- Extract **Bondora_raw.zip** and put the data file in folder named **dataset**
-- Run **Final_Pipeline.ipynb** to get the models
+- Dataset file should be in path **dataset/Bondora_raw.csv**
+- Run **Final_Pipeline.ipynb** notebook to get the models
 - To run the app: run `python -m streamlit run app.py` in vscode terminal 
 
