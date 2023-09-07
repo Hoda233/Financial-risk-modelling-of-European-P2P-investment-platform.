@@ -51,10 +51,10 @@ Supervised machine learning problem.
 Each pipelines includes Scaling, PCA, Model.
 
 ```
-linear_regression_pipeline = Pipeline([
+pipeline = Pipeline([
     ('scaler', StandardScaler()),
     ('pca', PCA(n_components =  20)),
-    ('classifier', LinearRegression())
+    ('classifier', model)
 ])
 ```
 
